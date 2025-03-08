@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export default function HeroBanner() {
   return (
-    <section className="relative">
+    <section className="relative w-full">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -17,9 +17,9 @@ export default function HeroBanner() {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 py-20 md:py-32 lg:py-40">
+      <div className="container relative z-10 py-20 md:py-32 lg:py-40 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl text-white">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl/none">
             Nâng cao kiến thức, mở rộng tương lai
           </h1>
           <p className="mt-6 text-lg md:text-xl">

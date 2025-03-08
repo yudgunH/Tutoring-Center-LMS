@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { toast } from "sonner"
+import { toast } from "@/hooks/use-toast"
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -20,7 +20,10 @@ export default function ContactForm() {
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000))
 
-    toast("Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.",)
+    toast({
+      title: "Gửi thông tin thành công!",
+      description: "Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.",
+    })
 
     setIsSubmitting(false)
     e.currentTarget.reset()
@@ -28,7 +31,7 @@ export default function ContactForm() {
 
   return (
     <section className="py-16 md:py-24 bg-muted/50">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold tracking-tight mb-2">Liên hệ tư vấn</h2>

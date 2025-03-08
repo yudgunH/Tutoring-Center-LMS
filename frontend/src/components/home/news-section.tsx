@@ -31,7 +31,7 @@ export default function NewsSection() {
 
   return (
     <section className="py-16 md:py-24">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
           <div>
             <h2 className="text-3xl font-bold tracking-tight mb-2">Tin tức & Sự kiện</h2>

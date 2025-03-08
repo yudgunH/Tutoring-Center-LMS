@@ -2,8 +2,8 @@ import Image from "next/image"
 
 export default function Introduction() {
   return (
-    <section className="py-16 md:py-24 bg-muted/50">
-      <div className="container">
+    <section className="py-16 md:py-24 bg-muted/50 w-full">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-2 items-center">
           <div>
             <h2 className="text-3xl font-bold tracking-tight mb-4">Về Trung Tâm Gia Sư</h2>
